@@ -1,7 +1,7 @@
 ---
 title: Initial commit
 author: Daniel Hernández <danhernan23i@gmail.com>
-date: July 11, 2020 18:00
+date: July 12, 2020 13:58
 thumbnail: https://kinsta.com/es/wp-content/uploads/sites/8/2018/03/git-1024x512.png
 ---
 

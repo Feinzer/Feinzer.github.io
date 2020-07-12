@@ -48,10 +48,12 @@ query PostsQuery {
                  h-32 bg-no-repeat bg-cover bg-center"
         />
       </div>
-      <div class="p-6 w-4/5 flex flex-col justify-center items-stretch">
-        <p class="text-2xl font-semibold">{{ post.node.title }}</p>
-        <p class="text-gray-500">{{ post.node.author }}</p>
-        <p class="text-xs pt-2 text-gray-400 self-end ">{{ post.node.date }}</p>
+      <div class="p-6 w-4/5 flex flex-row items-center justify-between">
+        <div class="w-full pl-3">
+          <p class="text-2xl font-semibold">{{ post.node.title }}</p>
+          <p class="text-gray-500">{{ post.node.author }}</p>
+        </div>
+        <p class="text-xs pt-2 pr-2 text-gray-400 whitespace-no-wrap self-end">{{ post.node.date }}</p>
       </div>
     </router-link>
   </div>
