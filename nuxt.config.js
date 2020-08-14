@@ -10,6 +10,19 @@ export default {
    */
   target: 'static',
   /*
+  ** Statically generate all blog routes
+  */
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const files = await $content('blog')
+        .only(['path'])
+        .fetch()
+
+      return files.map(file => file.path)
+    }
+  },
+  /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
