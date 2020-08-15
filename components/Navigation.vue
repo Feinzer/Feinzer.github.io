@@ -64,6 +64,11 @@ export default {
       },
     ],
   }),
+  watch: {
+    '$route' () {
+      this.navOpen = false
+    }
+  }
 }
 </script>
 
@@ -73,13 +78,13 @@ export default {
       <span
         @click="navOpen = !navOpen"
         v-show="navOpen"
-        class="overlay md:hidden w-screen h-screen absolute bg-black opacity-25"
+        class="overlay z-40 md:hidden w-screen h-screen absolute bg-black"
       />
     </transition>
     <transition name="slide">
       <div
         v-show="navOpen"
-        class="side-nav md:hidden text-white absolute w-full sm:w-2/4"
+        class="side-nav z-50 md:hidden text-white absolute w-full sm:w-2/4"
       >
         <div class="flex flex-col w-full px-5">
           <nuxt-link
@@ -156,6 +161,10 @@ export default {
 
 .side-nav {
   top: 6rem;
+}
+
+.overlay {
+  opacity: 0.9;
 }
 
 .slide-enter-active,
