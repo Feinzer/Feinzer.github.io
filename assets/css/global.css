@@ -1,3 +1,20 @@
 :root {
   background-color: #1b1b1b;
 }
+
+.load-enter-active,
+.load-leave-active {
+  transition-property: all;
+  transition-duration: 100ms;
+}
+.load-enter {
+  transform: translateY(0.5rem);
+  opacity: 0;
+}
+.load-enter-active {
+  transition-delay: 100ms;
+}
+.load-leave-active {
+  transform: translateY(0.5rem);
+  opacity: 0;
+}

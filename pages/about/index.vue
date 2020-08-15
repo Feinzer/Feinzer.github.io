@@ -1,10 +1,10 @@
 <script>
 export default {
-  name: 'Home',
+  name: 'About',
   transition: 'load',
   head () {
     return {
-      title: 'Daniel Hernández - Feinzer'
+      title: 'About - Feinzer'
     }
   },
 }
@@ -12,6 +12,6 @@ export default {
 
 <template>
   <div>
-    aaaaaaaaaa
+    aaaaaaaaaaaa
   </div>
 </template>

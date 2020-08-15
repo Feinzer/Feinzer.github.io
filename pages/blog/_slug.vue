@@ -1,6 +1,12 @@
 <script>
 export default {
   name: 'PostTemplate',
+  transition: 'load',
+  head() {
+    return {
+      title: this.post.title + ' - Feinzer'
+    }
+  },
   async asyncData({$content, redirect, params}) {
     const post = await $content('/blog', params.slug)
       .fetch()
@@ -9,11 +15,6 @@ export default {
         redirect('/')
       })
     return { post }
-  },
-  head() {
-    return {
-      title: this.post.title
-    }
   }
 }
 </script>
