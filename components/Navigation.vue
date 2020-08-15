@@ -78,13 +78,13 @@ export default {
       <span
         @click="navOpen = !navOpen"
         v-show="navOpen"
-        class="overlay z-40 md:hidden w-screen h-screen absolute bg-black"
+        class="overlay fixed z-40 md:hidden bg-black top-0 bottom-0 left-0 right-0"
       />
     </transition>
     <transition name="slide">
       <div
         v-show="navOpen"
-        class="side-nav z-50 md:hidden text-white absolute w-full sm:w-2/4"
+        class="side-nav fixed z-50 md:hidden text-white w-full sm:w-2/4"
       >
         <div class="flex flex-col w-full px-5">
           <nuxt-link

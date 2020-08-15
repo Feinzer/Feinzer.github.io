@@ -26,11 +26,10 @@ export default {
       <Card :type="CardType.IMAGE" />
       <Card :type="CardType.TITLE" content="Daniel Hernández" />
     </div>
-    <div class="sm:w-1/2 flex flex-col justify-center items-center">
+    <div class="w-4/5 md:w-1/2 flex flex-col justify-center items-center">
       <Card
         :type="CardType.INFO"
         content="Electronics engineering student and self taught developer with experience on Web, Mobile Apps, Games and Linux kernel development."
-        class="w-2/3"
       />
     </div>
   </div>
