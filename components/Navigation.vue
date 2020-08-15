@@ -84,7 +84,7 @@ export default {
     <transition name="slide">
       <div
         v-show="navOpen"
-        class="side-nav fixed z-50 md:hidden text-white w-full sm:w-2/4"
+        class="side-nav absolute z-50 md:hidden text-white w-full sm:w-2/4"
       >
         <div class="flex flex-col w-full px-5">
           <nuxt-link
@@ -116,7 +116,7 @@ export default {
       class="z-10 px-8 py-4 w-full flex justify-between items-center text-white"
     >
       <div class="flex flex-row items-center">
-        <div class="mr-4 cursor-pointer md:hidden" @click="navOpen = !navOpen">
+        <div class="mr-6 cursor-pointer md:hidden" @click="navOpen = !navOpen">
           <svg viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
             <path
               fill-rule="evenodd"
