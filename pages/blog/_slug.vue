@@ -1,4 +1,6 @@
 <script>
+import { FormatDate } from '~/plugins/tools'
+
 export default {
   name: 'PostTemplate',
   transition: 'load',
@@ -15,6 +17,9 @@ export default {
         redirect('/')
       })
     return { post }
+  },
+  methods: {
+    FormatDate
   }
 }
 </script>
@@ -40,7 +45,7 @@ export default {
     </div>
     <div class="self-end px-6 md:px-0">
       <p class="post-author text-sm font-medium text-gray-500">{{ post.author }}</p>
-      <p class="post-author text-xs text-gray-500 self-end">{{ post.date }}</p>
+      <p class="post-author text-xs text-gray-500">{{ FormatDate(post.createdAt) }}</p>
     </div>
   </div>
 </template>

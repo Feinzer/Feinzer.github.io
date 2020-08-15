@@ -13,7 +13,9 @@ export default {
     PostLink
   },
   async asyncData({ $content }) {
-    const posts = await $content('/blog').fetch()
+    const posts = await $content('/blog')
+      .sortBy('createdAt')
+      .fetch()
     return { posts }
   },
 }

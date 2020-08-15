@@ -1,4 +1,6 @@
 <script>
+import { FormatDate } from '~/plugins/tools'
+
 export default {
   name: 'PostLink',
   props: {
@@ -7,6 +9,9 @@ export default {
       required: true,
     },
   },
+  methods: {
+    FormatDate
+  }
 }
 </script>
 
@@ -27,7 +32,7 @@ export default {
         <p class="text-gray-500">{{ post.author }}</p>
       </div>
       <p class="text-xs pt-2 pr-2 text-gray-400 whitespace-no-wrap self-end">
-        {{ post.date }}
+        {{ FormatDate(post.createdAt) }}
       </p>
     </div>
   </nuxt-link>
