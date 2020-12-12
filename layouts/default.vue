@@ -1,17 +1,14 @@
 <script>
-import Navigation from '~/components/Navigation'
-
 export default {
-  name: 'DefaultLayout',
-  components: {
-    Navigation
-  }
+  name: 'DefaultLayout'
 }
 </script>
 
 <template>
   <div>
-    <Navigation /> 
-    <Nuxt />
+    <Circles class="z-10" />
+    <Diamonds class="z-20" />
+    <Navigation class="relative z-40" /> 
+    <Nuxt class="relative z-30" />
   </div>
 </template>
