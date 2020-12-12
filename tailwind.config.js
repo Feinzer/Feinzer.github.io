@@ -12,6 +12,9 @@ module.exports = {
         'fz-light-gray': '#313236',
         'fz-green': '#77ff85',
       },
+      spacing: {
+        72: '18rem'
+      }
     },
   },
   variants: {},

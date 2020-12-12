@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-  <div class="p-8 flex flex-col items-center">
+  <div class="p-8 flex flex-col items-center justify-center w-full lg:w-5/6 self-center">
     <PostLink 
       v-for="(post, index) in posts"
       :key="index"

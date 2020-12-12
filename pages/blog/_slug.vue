@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-  <div class="post md:m-10 flex flex-col py-6 md:p-6 shadow bg-fz-light-gray rounded-lg text-white">
+  <div class="post m-2 sm:m-4 md:m-10 flex flex-col py-6 md:p-6 shadow bg-fz-light-gray rounded-lg text-white md:w-3/4 xl:w-1/2 self-center">
     <div class="flex flex-col-reverse md:flex-row items-center justify-between w-full px-8 md:px-4 pb-10">
       <span />
       <p class="post-title text-center tracking-wider text-4xl md:text-5xl font-bold">

@@ -18,9 +18,9 @@ export default {
 <template>
   <nuxt-link
     :to="`blog/${post.slug}`"
-    class="post-link flex flex-col md:flex-row w-full md:w-3/4 md:h-32 mb-6 rounded-lg bg-fz-light-gray text-white hover:shadow-md"
+    class="post-link flex flex-col md:flex-row w-full md:w-3/4 md:h-48 mb-6 rounded-lg bg-fz-light-gray text-white hover:shadow-md"
   >
-    <div class="thumbnail-outer w-full md:w-64 h-48 md:h-32 overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg">
+    <div class="thumbnail-outer w-full md:w-72 h-64 md:h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg">
       <div
         :style="`background-image: url(${require('~/assets/images/blog/' + post.thumbnail)})`"
         class="thumbnail h-full transition-transform duration-500 ease-out bg-no-repeat bg-cover bg-center"
