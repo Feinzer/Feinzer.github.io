@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy:github": "yarn generate && cd dist/ && git init && git remote add origin git@github.com:Feinzer/Feinzer.github.io.git && git add -A; timestamp=$(date \"+%s\") && git commit -m \"Automated deployment $timestamp\"; git push -u -f origin master;"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
