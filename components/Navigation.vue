@@ -125,25 +125,25 @@ export default {
             />
           </svg>
         </div>
-        <Logo class="mr-4" />
+        <Logo class="mr-10" />
         <div class="hidden md:flex flex-row">
           <nuxt-link
             v-for="(routeLink, index) in routeLinks"
             :key="index"
             :to="routeLink.url"
-            class="font-bold nav-link hover:text-fz-green mx-1"
+            class="font-bold nav-link hover:text-fz-green mx-5"
           >
-            {{ routeLink.title }}
+            <span :class="index > 0 && 'ml-1'" v-for="(character, index) in routeLink.title" :key="character + routeLink.title">{{ character }}</span>
           </nuxt-link>
         </div>
       </div>
-      <div class="hidden md:flex flex-row w-1/4 justify-between">
+      <div class="absolute lg:relative hidden md:flex flex-col lg:flex-row w-1/4 justify-between items-end right-0 mr-10 mt-48 lg:m-0">
         <a
           v-for="(socialLink, index) in socialLinks"
           :key="index"
           :href="socialLink.url"
           target="_blank"
-          class="hover:text-fz-green transition-colors duration-150"
+          class="hover:text-fz-green transition-colors duration-150 mt-10 lg:mt-0"
         >
           <FaIcon :icon="socialLink.icon" classes="fa-2x" />
         </a>
@@ -195,12 +195,11 @@ export default {
 .nav-link {
   display: inline-block;
   color: #fff;
-  letter-spacing: 3px;
   text-transform: uppercase;
   position: relative;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  padding: 15px;
+  padding: 1rem 0;
   outline: 0;
 }
 .nav-link:after {
