@@ -7,7 +7,7 @@ const buildFolder = 'dist'
 const cwd = process.cwd()
 
 if (!fs.pathExistsSync(deployFolder)) {
-  console.log('E: Local deployment repository not found')
+  console.error('Local deployment repository not found')
   console.log(`Cloning from ${process.env.GIT_REMOTE} into ${deployFolder}...\n`)
   execSync(`git clone -b master ${process.env.GIT_REMOTE} ${deployFolder}`, { cwd })
 }
