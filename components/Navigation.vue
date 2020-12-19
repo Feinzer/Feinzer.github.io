@@ -153,7 +153,7 @@ export default {
 </template>
 
 <style scoped>
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 #navigation {
   font-family: 'Montserrat', sans-serif;
