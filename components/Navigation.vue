@@ -137,7 +137,7 @@ export default {
           </nuxt-link>
         </div>
       </div>
-      <div class="absolute lg:relative hidden md:flex flex-col lg:flex-row w-1/4 justify-between items-end right-0 mr-10 mt-48 lg:m-0">
+      <div class="absolute lg:relative hidden md:flex flex-col lg:flex-row lg:w-1/4 justify-between items-end right-0 mr-10 mt-48 lg:m-0">
         <a
           v-for="(socialLink, index) in socialLinks"
           :key="index"
