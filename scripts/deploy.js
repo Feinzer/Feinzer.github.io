@@ -1,5 +1,4 @@
 const { execSync } = require('child_process')
-const { time } = require('console')
 const fs = require('fs-extra')
 require('dotenv').config()
 
@@ -16,6 +15,7 @@ if (!fs.pathExistsSync(deployFolder)) {
 if (!fs.pathExistsSync(buildFolder)) throw 'Build directory not found'
 
 console.log('Updating local deployment directory...\n')
+execSync([`cd ${deployFolder}`,'git pull'].join('&&'), { cwd })
 fs.copySync(buildFolder, deployFolder, { overwrite: true })
 
 let timestamp = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') + ' UTC'
