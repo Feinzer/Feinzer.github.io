@@ -34,7 +34,7 @@ export default {
         @click="$router.push('/blog')"
         class="h-8 w-8 p-2 mb-2 md:mb-0
               text-fz-dark-gray bg-fz-green rounded-full shadow
-              transition-transform duration-200 transform hover:scale-105 self-end md:self-auto mt-1"
+              transition-transform duration-200 transform hover:scale-105 self-end md:self-auto mt-2 sm:mt-1"
       >
         <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
       </button>

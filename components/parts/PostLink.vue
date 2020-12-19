@@ -29,7 +29,7 @@ export default {
     <div class="p-4 w-full h-full flex flex-col md:items-center justify-between">
       <div class="pl-3 pt-3 flex flex-col justify-between h-full w-full">
         <div>
-          <p class="text-2xl font-semibold">{{ post.title }}</p>
+          <p class="text-2xl font-semibold mb-3">{{ post.title }}</p>
           <p>{{ post.description }}</p>
         </div>
         <p class="text-sm pt-2 text-gray-500">{{ post.author }}</p>
