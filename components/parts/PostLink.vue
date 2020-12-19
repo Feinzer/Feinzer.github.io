@@ -26,12 +26,15 @@ export default {
         class="thumbnail h-full transition-transform duration-500 ease-out bg-no-repeat bg-cover bg-center"
       />
     </div>
-    <div class="p-4 w-full flex flex-col md:flex-row md:items-center justify-between">
-      <div class="pl-3">
-        <p class="text-2xl font-semibold">{{ post.title }}</p>
-        <p class="text-sm mt-2 text-gray-500">{{ post.author }}</p>
+    <div class="p-4 w-full h-full flex flex-col md:items-center justify-between">
+      <div class="pl-3 pt-3 flex flex-col justify-between h-full w-full">
+        <div>
+          <p class="text-2xl font-semibold">{{ post.title }}</p>
+          <p>{{ post.description }}</p>
+        </div>
+        <p class="text-sm pt-2 text-gray-500">{{ post.author }}</p>
       </div>
-      <p class="text-xs pt-2 pr-2 text-gray-500 whitespace-no-wrap self-end">
+      <p class="text-xs my-2 pr-2 text-gray-500 whitespace-no-wrap self-end">
         {{ FormatDate(post.createdAt) }}
       </p>
     </div>
