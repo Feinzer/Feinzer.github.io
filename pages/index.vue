@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div class="absolute h-full w-full p-8 flex flex-col items-center justify-center">
+  <div class="lg:absolute h-full w-full p-8 flex flex-col items-center justify-center">
     <div class="sm:w-3/4 flex flex-col justify-center items-center">
       <Card :type="CardType.IMAGE" />
       <Card :type="CardType.TITLE" content="Daniel Hernández" />
